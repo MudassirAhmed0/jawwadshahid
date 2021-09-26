@@ -1,0 +1,50 @@
+.Offers {
+  padding: 5rem 5%;
+}
+
+.Offers h1 {
+  text-align: center;
+}
+
+.Offers .Offers_Container {
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  gap: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Offers .Offers_Container .Offer_card {
+  width: 300px;
+  height: 200px;
+  background-color: #f4f4f4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.Offers .Offers_Container .Offer_card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.Offers .Offers_Container .Offer_card h2 {
+  max-width: 80%;
+}
+/*# sourceMappingURL=Offers.css.map */

@@ -1,0 +1,112 @@
+.Blogs {
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  padding: 5rem 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Blogs h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #fff;
+  color: #222;
+}
+
+.Blogs h1 span {
+  background: dodgerblue;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.Blogs .Blogs_Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 2%;
+          column-gap: 2%;
+  row-gap: 2rem;
+  margin-top: 2rem;
+  width: 90%;
+  max-width: 1140px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Blogs .Blogs_Container .Blog_Card {
+  width: 48%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Blogs .Blogs_Container .Blog_Card .Blog_Card_Img {
+  height: 270px;
+  overflow: hidden;
+}
+
+.Blogs .Blogs_Container .Blog_Card .Blog_Card_Img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+.Blogs .Blogs_Container .Blog_Card .Blog_Card_Content {
+  padding: 1rem 0;
+}
+
+.Blogs .Blogs_Container .Blog_Card .Blog_Card_Content p {
+  padding: .5rem 0;
+}
+
+.Blogs .Blogs_Container .Blog_Card .Blog_Card_Content button {
+  color: dodgerblue;
+}
+
+.Blogs .See_All_Blogs_Btn {
+  margin-top: 2.5rem;
+}
+
+.Blogs .See_All_Blogs_Btn button {
+  width: 180px;
+  height: 40px;
+  background: dodgerblue;
+  color: #fff;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.Blogs .See_All_Blogs_Btn button:hover {
+  letter-spacing: 1.1px;
+}
+
+@media (max-width: 768px) {
+  .Blogs .Blogs_Container {
+    gap: 2rem;
+  }
+  .Blogs .Blogs_Container .Blog_Card {
+    width: 100%;
+  }
+  .Blogs .Blogs_Container .Blog_Card .Blog_Card_Img {
+    height: 200px;
+  }
+}
+/*# sourceMappingURL=Blogs.css.map */

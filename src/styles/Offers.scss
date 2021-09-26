@@ -1,0 +1,33 @@
+.Offers{
+    padding: 5rem 5%;
+    h1{
+        text-align: center;
+    }
+    .Offers_Container{
+        margin-top: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 2rem;
+        justify-content: center;
+        .Offer_card{
+            width: 300px;
+            height: 200px;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           text-align: center;
+           cursor: pointer;
+           transition: .4s;
+           &:hover{
+               transform: scale(1.1);
+           }
+           h2{
+               max-width: 80%;
+           }
+        }
+
+
+    }
+}
