@@ -38,8 +38,6 @@ header ul li a {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 1.2px;
-  -webkit-transition: .3s;
-  transition: .3s;
 }
 
 header ul li a:hover {

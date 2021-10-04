@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import projects from "../Assets/data";
 import "../styles/Projects.css";
-import Project from "./Project";
-import profile from '../Assets/content-wirting/profile.webp'
+// import Project from "./Project";
+import profile from '../Assets/content-wirting/profile.jpg'
 
 const Projects = () => {
   return (

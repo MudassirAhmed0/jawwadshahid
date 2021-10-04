@@ -2,6 +2,7 @@ import React from 'react'
 import '../styles/Blogs.css'
 import Blog from './Blog'
 import blogs from '../Assets/content-wirting/blogsdata/data'
+import { Link } from 'react-router-dom'
 
 const Blogs = () => {
     let recentBlogs =[]
@@ -15,7 +16,9 @@ const Blogs = () => {
             {recentBlogs.map(item=> item)}
             </div>
             <div className="See_All_Blogs_Btn">
-                <button>See All Blogs</button>
+                <Link to='blogs'>
+                    <button>See All Blogs</button>
+                </Link>
             </div>
         </div>
     )

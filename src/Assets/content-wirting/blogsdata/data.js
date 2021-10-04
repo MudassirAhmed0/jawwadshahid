@@ -9,6 +9,24 @@ const blogs=[
         title:'Effects of Covid-19 on the world',
         smallDes:'COVID-19 is not going anywhere – at the moment of writing, there are more than a million cases reported across the...',
         des:'',
+        paras:[
+            [
+                "COVID-19",
+                " is not going anywhere – at the moment of writing, there are more than a million cases reported across the globe. In Dec-2019, the first case of Covid-19 was diagnosed and reported in the City of Wuhan, China. Over the year, it disseminated its variant in multiple countries of the world, and in the blink of an eye the cities, countries, provinces, and the world get infected and have been confined to their homes. Covid-19 contains many characteristic features, and variation of symptoms is one of them which have highly been reported. They vary from person to person, and the great numbers of cases are asymptomatic which causes serious consequences later. As it remains mild at the beginning but with the passage of time, it converted its severity into a drastic level of infection such as (fever, dryness, cough, joint pain, general fatigue). The absolute majority of the people get infected and no symptoms were developed even they remain completely unfamiliar whether they are carrying a disease or not, however, it is vague at the time of transmission. Few of the cases result in extreme severity in symptoms such as feeling pain in breathing, chest pain, nausea, and diarrhea. In this regard, some rare cases can cause death, if it leads to the complications like pneumonia and organ failure. Apart from the health complications, there are several psychological effects of Covid-19 as well on the lives."
+            ],
+            [
+                "As soon as",
+                " it gets cleared that the disease begun to spread from China to other countries, it causes much mental distress like anxiety, fear, and panic on the populace. Even the sensible individuals are susceptive to it when it all started to reach the alarming situation and when the rumors started to spread every moment of the day. And in return, It leads to various types of irrational behavior: Mask started to be sold in a bulk quantity, supply gets exhausted rapidly, food stock gets shorted from the market, and all the things stressed out further when pandemic spreads more. People who belong to the survivalist community left their homes and retreated to segregated locations. In conclusion, it has become clear that the individuals, after being influenced by hysteria, can be mentally unstable, and the Covid-19 can be dangerous for society as a whole. "
+            ],
+            [
+                "Living with Covid-19",
+                " is not that uncomplicated as it seems nowadays. The thing to understand regarding the Covid-19 is that there is no positive outcome to be panicking about it or sit it out. Covid-19 is not that easy to get eliminated, and there is no guarantee whether the vaccine would work or not. With consideration of this novel disease, we should leave ourselves to the fact that the majority of the population (60-70%) would have to suffer from infection further before the vaccine is made in an appropriate manner and give a positive outcome. Therefore, the only thing that we can do is to try to control the spread of the corona virus by quarantine ourselves and ensure social isolation in this regard."
+            ],
+            [
+                "The infection of novel coronavirus",
+                "has become a part of the reality, so we have to ascertain to live with it. Soon after the initial outbreak would over, there would be a new one waiting for us. However, they would gradually its intensity would getting lesser with the passage of time as the percentage of populace immunity going up. Therefore, we do not lose hope in this time of trouble and we have to ensure social distancing, isolation, and masking at any cost. Consequently, it is suggested to use healthy practices to protect yourself by implementing the following measures into our routine life. Washing hands with soap for at least 20 seconds, avoid touching eyes, nose, and mouth, avoid staying close to the people, social distancing by keeping at least 6-feet away, and wear a mask 24/7 or cover your mouth and nose with a hygienic clothe – it is meant to protect others. By following these measures, we hope this novel disease to get rid of this world. "
+            ],
+        ],
         img:'https://images.unsplash.com/photo-1584931423339-7a8d498ca23d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'  
     },
     {

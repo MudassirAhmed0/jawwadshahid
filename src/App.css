@@ -9,6 +9,7 @@ html{
    box-sizing: border-box;
    font-family: 'Roboto', sans-serif;
 }
+
 body{
    scroll-behavior: smooth;
 }
@@ -21,4 +22,7 @@ button,a{
 }
 ul{
    list-style: none;
+}
+.mt5rem{
+   margin-top: 5rem;
 }

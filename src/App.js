@@ -5,6 +5,10 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ProjectReview from "./Pages/ProjectReview";
 import Sorry from "./Pages/Sorry";
 import ScrollToTop from "./Components/ScrollToTop";
+import Blogs from "./Pages/Blogs";
+import Blog from "./Pages/Blog";
+import Contact from "./Pages/Contact";
+import About from "./Pages/About";
 
 function App() {
   return (
@@ -15,11 +19,18 @@ function App() {
             <Route path="/" exact>
               <Landing />
             </Route>
-            <Route path="/project-review/:id">
-              <ProjectReview />
+            <Route path="/blogs">
+              <Blogs />
             </Route>
-            <Route path="/sorry">
-              <Sorry />
+           
+            <Route path="/blog/:id">
+              <Blog />
+            </Route>
+            <Route path="/contact">
+              <Contact />
+            </Route>
+            <Route path="/about">
+              <About />
             </Route>
           </Switch>
         </ScrollToTop>

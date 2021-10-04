@@ -75,7 +75,61 @@
 }
 }
 
+
+.BlogsContainer{
+    width: 90%;
+    max-width: 1140px;
+    margin: auto;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+    padding: 2rem;
+    background: #f9f9f9;
+    .Blog{
+        margin-bottom: 5rem;
+        .BlogImage{
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        
+        .BlogContent{
+            padding: 1rem 0;
+            p{
+                margin: 1rem 0;
+                max-width: 900px;
+            }
+            .BlogParas{
+                margin-top: 2.4rem;
+                p{
+               line-height: 1.6;
+                    span{
+                    font-size: 1.5rem;
+                    font-weight: lighter;
+                }
+            }
+            }
+            a{
+                color: dodgerblue;
+            }
+        }
+    }
+}
+
 @media(max-width:768px){
+    .BlogsContainer{
+        width: 95%;
+        padding: 1rem;
+        .Blog{
+            .BlogImage{
+                height: 200px;
+            }
+
+        }
+    }
    
     .Blogs .Blogs_Container {
         gap: 2rem;

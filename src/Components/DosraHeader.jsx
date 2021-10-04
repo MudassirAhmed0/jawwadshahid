@@ -1,20 +1,20 @@
 import React, { useEffect, useRef } from 'react'
-import logo from '../Assets/imgs/log.png'
+// import logo from '../Linkssets/imgs/log.png'
 import '../styles/Header.css'
 import { gsap } from 'gsap'
 import { Link } from 'react-router-dom'
 
-const Header = () => {
+const DosraHeader = ({linkActive}) => {
     const bars = useRef(null)
     const mobileNav = useRef(null)
     const header = useRef(null)
-    const navlinks = document.querySelectorAll('.navlink')
+   /*  const navlinks = document.querySelectorAll('.navlink')
     const addActiveClass = e => {
         navlinks.forEach(link => link.classList.contains('activeLink') && link.classList.remove('activeLink'))
-        e.target.classList.add('activeLink')
-    }
-    const addClassToNav = () => {
-        const scroll = window.scrollY
+        e.target.classList.add('activeLink') */
+    // }
+    // const addClassToNav = () => {
+      /*   const scroll = window.scrollY
 
         if (scroll > 100) {
             header?.current.classList.add('headerBg')
@@ -23,16 +23,16 @@ const Header = () => {
             header?.current.classList.remove('headerBg')
         }
 
-    }
+    } */
 
-    useEffect(() => {
+   /*  useEffect(() => {
         window.addEventListener('scroll', addClassToNav)
         return () => {
             window.removeEventListener('scroll', addClassToNav)
         }
-    }, [])
+    }, []) */
     
-    const addClassToNavLink = () => {
+/*     const addClassToNavLink = () => {
         const Home = document.getElementById('Home')
         const Projects = document.getElementById('Projects')
         const Blogs = document.getElementById('Blogs')
@@ -69,14 +69,14 @@ const Header = () => {
             C.classList.add('activeLink')
         }
 
-    }
+    } */
 
-    useEffect(() => {
+ /*    useEffect(() => {
         window.addEventListener('scroll', addClassToNavLink)
         return () => {
             window.removeEventListener('scroll', addClassToNavLink)
         }
-    }, [])
+    }, []) */
     const openNav = () => {
         bars.current.classList.toggle('barsActive')
         let mN= document.querySelector('.mobileNav')
@@ -89,7 +89,7 @@ const Header = () => {
     }
    
         return (
-        <header ref={header} as='nav'>
+        <header  className='headerBg' as='nav'>
             <div className="logo">
                 <Link to='/'>
                     <h1>JS</h1>
@@ -97,11 +97,10 @@ const Header = () => {
                 {/* <img src={logo} alt="Logo" /> */}
             </div>
             <ul>
-                <li><a id='H' onClick={addActiveClass} className="navlink activeLink" href="#Home">Home</a></li>
-                <li><a id='P' onClick={addActiveClass} className="navlink " href="#Projects">About Me</a></li>
-                <li><a  id='S' onClick={addActiveClass} className="navlink " href="#Blogs">Blog</a></li>
-                <li><a id='C' onClick={addActiveClass} className="navlink " href="#Contact">Offers</a></li>
-                <li className='heroBtn'><a href="#Contact">Contact Now</a></li>
+                <li><Link  to='/' className={"navlink"+ " "  } >Portfolio</Link></li>
+                <li><Link  to='/about' className={`"navlink " ${linkActive == "about"  && " activeLink"}` } >About Me</Link></li>
+                <li><Link  to='/blogs'  className={`"navlink " ${linkActive == "blogs"  && " activeLink"} `} >Blogs</Link></li>
+                <li className='heroBtn'><Link  to='/contact'>Contact Now</Link></li>
             </ul>
             <div ref={bars} className='bars' onClick={openNav}>
                 <span className='bar bar1'></span>
@@ -112,11 +111,10 @@ const Header = () => {
             </div>
             <div  className='mobileNav'>
                 <ul>
-                    <li><a className='mobileNavItem'  onClick={closeSidebar} href="#home">Home</a></li>
-                    <li><a className='mobileNavItem'  onClick={closeSidebar} href="#Projects">About Me</a></li>
-                    <li><a className='mobileNavItem' onClick={closeSidebar}  href="#Blogs">Blog</a></li>
-                    <li><a className='mobileNavItem' onClick={closeSidebar}  href="#Contact">Offers</a></li>
-                    <li className='mobileNavBtn'><a onClick={closeSidebar} className='mobileNavItem' href="#Contact">Contact Now</a></li>
+                    <li><Link  to='/'className='mobileNavItem'  onClick={closeSidebar} >Portfolio</Link></li>
+                    <li><Link  to='/about'className='mobileNavItem'  onClick={closeSidebar} >About Me</Link></li>
+                    <li><Link  to='/blogs'className='mobileNavItem' onClick={closeSidebar}  >Blogs</Link></li>
+                    <li className='mobileNavBtn'><Link  to='/contact' onClick={closeSidebar} className='mobileNavItem' >Contact Now</Link></li>
                 </ul>
             </div>
           
@@ -124,4 +122,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default DosraHeader
